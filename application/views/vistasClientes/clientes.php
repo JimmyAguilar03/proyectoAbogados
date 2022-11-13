@@ -6,7 +6,7 @@
 </div>
 <a href= <?php echo base_url("Cliente/nuevo");
         ?>>
-        <button type="button" class="btn btn-success btn-lg">Nuevo</button>
+        <button type="button" class="btn btn-success btn-lg">+ Nuevo</button>
 </a> 
 <div>
   <table class="table table-hover">
@@ -14,11 +14,12 @@
     <tr>
         <th scope="col"> Num. </th>
         <th scope="col"> Nombre </th>
-        <th scope="col"> Apellido P </th>
-        <th scope="col"> Apellido M </th>
+        <th scope="col"> Apellidos </th>
         <th scope="col"> DNI </th>
         <th scope="col"> Direccion </th>
         <th scope="col"> Tel </th>
+        <th></th>
+        <th></th>
     </tr>
 </thread>
     <tbody>
@@ -35,11 +36,7 @@
             ?>
         </td>
         <td> 
-            <?php echo $dC->apellido_p;
-            ?>
-        </td>
-        <td>
-            <?php echo $dC->apellido_m;
+            <?php echo $dC->apellido_p . " " . $dC->apellido_m;
             ?>
         </td>
         <td>
