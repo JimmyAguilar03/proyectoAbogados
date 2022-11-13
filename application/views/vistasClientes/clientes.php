@@ -1,7 +1,7 @@
 <div class="container">
 <div class="encabezado">
 <center>
-       <h1> Lista de clientes </h1>
+       <h1> Lista de clientes de abogados </h1>
 </center>
 </div>
 <a href= <?php echo base_url("Cliente/nuevo");
