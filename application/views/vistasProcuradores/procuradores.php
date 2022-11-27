@@ -14,8 +14,7 @@
     <tr>
         <th scope="col"> No. procurador</th>
         <th scope="col"> Nombre </th>
-        <th scope="col"> Apellido_p</th>
-        <th scope="col"> Apellido_m </th>
+        <th scope="col"> Apellidos</th>
         <th scope="col"> Direccion</th>
         <th scope="col"> Telefono </th>
     </tr>
@@ -34,11 +33,7 @@
             ?>
         </td>
         <td> 
-            <?php echo $dP->apellido_p;
-            ?>
-        </td>
-        <td>
-            <?php echo $dP->apellido_m;
+            <?php echo $dP->apellido_p . " ". $dP->apellido_m; ;
             ?>
         </td>
         <td>

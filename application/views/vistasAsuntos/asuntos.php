@@ -14,8 +14,8 @@
     <tr>
         <th scope="col"> No. asunto</th>
         <th scope="col"> No. cliente </th>
-        <th scope="col"> Fecha_f</th>
-        <th scope="col"> Fecha_i </th>
+        <th scope="col"> Fecha final</th>
+        <th scope="col"> Fecha inicial </th>
         <th scope="col"> Estado</th>
         <th scope="col"> Detalle </th>
     </tr>

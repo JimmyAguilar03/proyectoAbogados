@@ -12,7 +12,7 @@
   <table class="table table-hover">
 <thread> 
     <tr>
-        <th scope="col"> Num. </th>
+        <th scope="col"> Numero </th>
         <th scope="col"> Nombre </th>
         <th scope="col"> Apellidos </th>
         <th scope="col"> DNI </th>
