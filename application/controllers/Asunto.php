@@ -12,6 +12,8 @@ class Asunto extends CI_controller{
     }
     public function nuevo()
     {
+        $this->load->model('Cliente_model');
+        $datos['datosCliente']= $this->Cliente_model->clientes();
         $this -> load -> view ('Plantillas/header');
         $this -> load-> view ('vistasAsuntos/nuevoAsuntos');
         $this -> load -> view ('Plantillas/footer');
