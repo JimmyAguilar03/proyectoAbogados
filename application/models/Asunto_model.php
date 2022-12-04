@@ -2,7 +2,14 @@
 class Asunto_model extends CI_Model{
 
     public function asuntos(){
-        $query=$this->db->get('Asunto');
+        $query=$this->db->query(" SELECT A.no_asunto,C.nombre,C.apellido_p,C.apellido_m, 
+        A.fecha_final,A.fecha_archivado AS fecha_inicio, LE.no_estado, LE.nombreEstado AS estado, A.detalle
+        FROM Asunto as A 
+        JOIN Cliente as C 
+        ON A.no_cliente = C.no_cliente
+        JOIN listaEstados as LE
+        ON A.estado = LE.no_estado
+        ");
         return $query->result();
     }
     public function guardarAsunto($datos)

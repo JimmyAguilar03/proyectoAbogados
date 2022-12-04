@@ -9,24 +9,24 @@
   </div>
   <div class="col-md-5">
     <label for="inputPassword4" class="form-label">Fecha final</label>
-    <input type="date" class="form-control"name="fecha_final" id="fecha_final" placeholder="Fecha_f">
+    <input type="date" class="form-control"name="fecha_final" id="fecha_final" placeholder="Fecha_f" required>
   </div>
   <div class="col-md-5">
     <label for="inputPassword4" class="form-label">Fecha archivado</label>
-    <input type="date" class="form-control" name="fecha_archivado" id="fecha_archivado" placeholder="Fecha_i">
+    <input type="date" class="form-control" name="fecha_archivado" id="fecha_archivado" placeholder="Fecha_i" required>
   </div>
 
   <div class="col-2">
     <label for="inputAddress" class="form-label">Estado</label>
-    <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado">
+    <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado" required>
   </div>
   <div class="col-10">
     <label for="inputAddress2" class="form-label">Detalle</label>
-    <input type="text" class="form-control" name="detalle" id="detalle" placeholder="Detalle">
+    <input type="text" class="form-control" name="detalle" id="detalle" placeholder="Detalle" required>
   </div>
 
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Guardar </button>
+    <button type="submit" class="btn btn-primary">Guardar </button required>
   </div>
     </form>
 </div>

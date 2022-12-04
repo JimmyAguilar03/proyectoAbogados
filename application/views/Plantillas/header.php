@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#" >
+            <a class="navbar-brand" href=<?php echo base_url('Menu'); ?>  >
             Menu abogados
         </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

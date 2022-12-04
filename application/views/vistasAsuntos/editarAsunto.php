@@ -10,7 +10,7 @@
   </div>
   <div class="col-md-5">
     <label for="inputPassword4" class="form-label">Fecha final</label>
-    <input type="date" class="form-control" name="fecha_final" id="fecha_final" placeholder="Fecha_f" value=<?php echo $no_cliente->fecha_final;?>> 
+    <input   type="date" class="form-control" name="fecha_final" id="fecha_final" placeholder="Fecha_f" value=<?php echo $no_cliente->fecha_final;?>> 
   </div>
   <div class="col-md-5">
     <label for="inputPassword4" class="form-label">Fecha archivado</label>

@@ -13,36 +13,52 @@
 <thread> 
     <tr>
         <th scope="col"> No. asunto</th>
-        <th scope="col"> No. cliente </th>
-        <th scope="col"> Fecha final</th>
+        <th scope="col"> Estado </th>
+        <th scope="col"> Nombre del cliente</th>
         <th scope="col"> Fecha inicial </th>
-        <th scope="col"> Estado</th>
+        <th scope="col"> Fecha final</th>
         <th scope="col"> Detalle </th>
     </tr>
 </thread>
     <tbody>
     <?php  foreach($datosAsunto as $dA):
+    switch($dA-> no_estado){
+        case 1: 
+            $color = "success"; //Verde
+            break; 
+        case 2: 
+            $color = "warning"; //Amarillo
+            break;
+        case 3: 
+            $color = "primary"; //Azul
+            break;
+        case 4: 
+            $color = "secondary"; //Morado
+            break;
+        case 5: 
+            $color = "danger"; //Rojo
+            break; 
+    }
      ?>
     <tr>
         <th scope="row">
             <?php echo $dA->no_asunto;
             ?>
         </th>
-        
-        <td>
-            <?php echo $dA->no_cliente; 
+         <td span class="badge text-bg-<?php echo $color;?>" >
+            <?php echo $dA->estado;
+            ?>
+        </td>
+        <td >
+            <?php echo $dA->nombre . " " . $dA-> apellido_p . " " . $dA-> apellido_m; 
             ?>
         </td>
         <td> 
-            <?php echo $dA->fecha_final;
+        <?php echo $dA->fecha_final;
             ?>
         </td>
         <td>
-            <?php echo $dA->fecha_archivado;
-            ?>
-        </td>
-        <td>
-            <?php echo $dA->estado;
+        <?php echo $dA->fecha_inicio;
             ?>
         </td>
         <td>
