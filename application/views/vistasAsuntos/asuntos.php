@@ -45,7 +45,8 @@
             <?php echo $dA->no_asunto;
             ?>
         </th>
-         <td span class="badge text-bg-<?php echo $color;?>" >
+         <td style="vertical-align:middle; ">
+         <span class="badge text-bg-<?php echo $color;?>" >
             <?php echo $dA->estado;
             ?>
         </td>
