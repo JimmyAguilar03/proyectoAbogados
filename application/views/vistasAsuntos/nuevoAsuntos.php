@@ -31,7 +31,7 @@
   <div class="col-2">
     <label for="estado" class="form-label">Estado</label>
     <select name="estado" id="estado" class="form-select">
-      <option selectd>Selecciona un estado</option>
+      <option selected>Selecciona un estado</option>
       <?php foreach($datosEstado as $dE):
       ?>
       <option value=" <?php echo $dE->no_estado;?>">

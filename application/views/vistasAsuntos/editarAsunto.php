@@ -19,11 +19,21 @@
 
   <div class="col-2">
     <label for="inputAddress" class="form-label">Estado</label>
-    <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado" value=<?php echo $no_cliente->estado;?>> 
+    <input class="form-select" name="estado" id="estado"> 
+    <option selected> Selecciona un estado </option>
+      <?php foreach($datosEstado as $dE):
+      ?>
+      <option value=" <?php echo $dE->no_estado;?>">
+      <?php 
+      echo $dE->nombreEstado;
+      ?>
+      </option>
+      <?php endforeach;?>
+    </select>
   </div>
   <div class="col-10">
     <label for="inputAddress2" class="form-label">Detalle</label>
-    <input type="text" class="form-control" name="detalle" id="detalle" placeholder="Detalle" value=<?php echo $no_cliente->detalle;?>> 
+    <input maxlength="100" minlength="3" type="text" class="form-control" name="detalle" id="detalle" placeholder="Detalle" value=<?php echo $no_cliente->detalle;?>> 
   </div>
   <input type="hidden" id="no_asunto" name="no_asunto" value=<?php echo $no_cliente->no_asunto;?>>
   <div class="col-12">
