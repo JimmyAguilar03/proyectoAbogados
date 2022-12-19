@@ -46,10 +46,11 @@ class Asunto extends CI_controller{
     {
         $this-> load-> model('Asunto_model');
         $dato['no_cliente']= $this -> Asunto_model-> buscarAsunto($id);
+        $this->load->model('Estado_model');
+        $dato['datosEstado']= $this->Estado_model->estado();
         $this -> load -> view ('Plantillas/header');
         $this -> load-> view ('vistasAsuntos/editarAsunto',$dato);
-        $this -> load -> view ('Plantillas/footer');
-        
+        $this -> load -> view ('Plantillas/footer');        
     }
     public function actualizar(){
             

@@ -18,6 +18,7 @@
         <th scope="col"> Fecha inicial </th>
         <th scope="col"> Fecha final</th>
         <th scope="col"> Detalle </th>
+        <th scope="col"> Reporte </th>
     </tr>
 </thread>
     <tbody>
@@ -78,6 +79,13 @@
            <button type="button" class="btn btn-danger">Eliminar</button>
         </a>
         </td>
+        <td>
+         <a href= <?php echo base_url("Imprimir/asunto/". $dA-> no_asunto);
+        ?>>
+           <button type="button" class="btn btn-info">Reporte</button>
+        </a>
+        </td>
+
     </tr>
        
     <?php

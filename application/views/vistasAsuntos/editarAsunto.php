@@ -5,7 +5,7 @@
     
 <form action= <?php echo base_url("Asunto/actualizar");?> method="post" class="row g-3">
 <div class="col-md-2">
-    <label for="inputEmail4" class="form-label">Número de cliente</label>
+    <label for="inputEmail4" class="form-label"> Número de cliente </label>
     <input type="text" class="form-control" name="no_cliente" id="no_cliente" placeholder="No. cliente" value=<?php echo $no_cliente->no_cliente;?>> 
   </div>
   <div class="col-md-5">
@@ -19,15 +19,27 @@
 
   <div class="col-2">
     <label for="inputAddress" class="form-label">Estado</label>
-    <input class="form-select" name="estado" id="estado"> 
-    <option selected> Selecciona un estado </option>
+    <select class="form-select" name="estado" id="estado">
       <?php foreach($datosEstado as $dE):
-      ?>
-      <option value=" <?php echo $dE->no_estado;?>">
+      if ($dE->no_estado==$no_cliente->estado){
+        ?>
+      <option selected value=" <?php echo $dE->no_estado;?>">
       <?php 
-      echo $dE->nombreEstado;
+        echo $dE->nombreEstado;
       ?>
       </option>
+      <?php 
+      }else{
+        ?>
+        <option value=" <?php echo $dE->no_estado;?>">
+        <?php 
+          echo $dE->nombreEstado;
+        ?>
+      </option>
+        <?php 
+      }
+      ?>
+      
       <?php endforeach;?>
     </select>
   </div>

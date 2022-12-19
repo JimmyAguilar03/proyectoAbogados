@@ -26,7 +26,7 @@
   </div>
   <div class="col-md-5">
     <label for="inputCity" class="form-label">Telefono</label>
-    <input maxlength="10" type="text" class="form-control" name="telefono" id="telefono" placeholder="Telefono" value=<?php echo $nombre->telefono;?>> 
+    <input   minlength="10" maxlength="10" type="text" class="form-control" name="telefono" id="telefono" placeholder="Telefono" value=<?php echo $nombre->telefono;?>> 
   </div>
   <input type="hidden" id="no_cliente" name="no_cliente" value=<?php echo $nombre->no_cliente;?>>
 
