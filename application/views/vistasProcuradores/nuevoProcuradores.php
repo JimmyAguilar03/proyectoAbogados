@@ -3,17 +3,17 @@
 <h1> Nuevo Procurador</h1>
 </center>
     <form action= <?php echo base_url("Procurador/guardar");?> method="post" class="row g-3">
-    <div class="col-md-2">
+    <div class="col-md-4">
     <label for="inputEmail4" class="form-label">Nombre</label>
     <input maxlength="25" type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" required>
   </div>
-  <div class="col-md-10">
-    <label for="inputPassword4" class="form-label">Apellidos</label>
-    <input maxlength="50" type="text" class="form-control" name="apellido_p" id="apellido_p" placeholder="Apellidos" required>
+  <div class="col-md-4">
+    <label for="inputPassword4" class="form-label">Apellido Paterno</label>
+    <input maxlength="50" type="text" class="form-control" name="apellido_p" id="apellido_p" placeholder="Apellido paterno" required>
   </div>
-  <div class="col-md-5">
+  <div class="col-md-4">
     <label for="inputPassword4" class="form-label">Apellido Materno</label>
-    <input maxlength="50" type="text" class="form-control" name="apellido_m" id="apellido_m" placeholder="Apellido_m" required>
+    <input maxlength="50" type="text" class="form-control" name="apellido_m" id="apellido_m" placeholder="Apellido materno" required>
   </div>
 
   <div class="col-8">

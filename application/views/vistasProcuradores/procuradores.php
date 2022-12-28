@@ -56,6 +56,12 @@
             <button type="button" class="btn btn-danger">Eliminar</button>
         </a>
         </td>
+        <td>
+        <a href= <?php echo base_url("Imprimir/procurador/". $dP-> no_procurador);
+        ?>>
+           <button type="button" class="btn btn-info">Reporte</button>
+        </a>
+        </td>
     </tr>
        
     <?php

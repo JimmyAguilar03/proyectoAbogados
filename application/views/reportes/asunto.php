@@ -17,7 +17,7 @@
    $pdf->SetFont('Arial', 'B', 12);
    $pdf->Cell(20,10, utf8_decode('Estado: '),0);
    $pdf->SetFont('Arial', '', 12);
-   $pdf->Cell(30,10, utf8_decode($asunto->no_asunto));
+   $pdf->Cell(30,10, utf8_decode($asunto->estado));
 
    $pdf->SetXY(130,25);
    $pdf->SetFont('Arial', 'B', 12);
@@ -31,7 +31,7 @@
    $pdf->SetFont('Arial', '', 12);
    $pdf->Cell(40,10, utf8_decode($asunto->fecha_final),0,1);
 
-   $pdf->SetXY(98,45);
+   $pdf->SetXY(15,45);
    $pdf->SetFont('Arial', 'B', 16);
    $pdf->Cell(15,10, utf8_decode('Detalle: '),0,1,'C');
    $pdf->SetFont('Arial', '', 12);
